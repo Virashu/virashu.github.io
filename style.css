@@ -1,34 +1,53 @@
+@font-face {
+  font-family:"F25 Bank Printer";
+  src:url(./fonts/F25_Bank_Printer.ttf);
+}
+
 body {
-    background-image: url(media/pic.jpg);
-    background-size: cover;
-    color: black;
-    font-family: Verdana;
-  }
-  .main {
-    background-color: #272727;
-    color: #ffcfff;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 1080px;
-  }
+  background-image: url(media/pic.jpg);
+  background-size: cover;
+  color: black;
+  font-family: Verdana;
+}
+
+.main {
+  background-color: #272727;
+  color: #ffcfff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 1080px;
+}
   
-  .links > ul {
-      list-style-type: none;
-      padding: 0;
-  }
+.links > ul {
+  list-style-type: none;
+  padding: 0;
+}
   
-  .links {
-    background-color: #373737;
-    width: max-content;
-    padding-right: 10px;
-    padding: 10px;
-  }
+.links {
+  background-color: #373737;
+  width: max-content;
+  padding: 10px;
+}
   
-  .header {
-    top: 20px;
-    color: #ffbd59;
-    position: relative;
-    text-align: center;
-    font-size: 48px;
-  }
+.header {
+  top: 20px;
+  color: #ffbd59;
+  position: relative;
+  text-align: center;
+  font-family:'F25 Bank Printer';
+  font-size: 48px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffbd59;
+}
+
+aside {
+  float: left;
+}
+
+.navigation {
+  list-style-type: none;
+}
