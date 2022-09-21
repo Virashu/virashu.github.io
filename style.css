@@ -43,6 +43,10 @@ a {
   text-decoration: none;
   color: #ffbd59;
 }
+a:visited {
+  text-decoration: none;
+  color:#f7751f;
+}
 
 aside {
   float: left;
