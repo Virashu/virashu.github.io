@@ -1,59 +1,78 @@
+:root {
+  --bg: #282828;
+  --bg1: #3c3836;
+  --fg: #ebdbb2;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+  --purple: #d3869d;
+  --red: #fb4934;
+
+}
 @font-face {
-  font-family:"F25 Bank Printer";
-  src:url(fonts/F25_Bank_Printer.ttf);
+  font-family: F25 Bank Printer;
+  src: url(fonts/F25_Bank_Printer.ttf);
+}
+
+html {
+  height: 100%; 
+  background: linear-gradient(var(--yellow), var(--purple));
+  background-size:contain;
+  background-attachment: fixed;
 }
 
 body {
-  background-image: url(media/pic.jpg);
-  background-size: cover;
-  color: black;
-  font-family: Verdana;
+  
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: F25 Bank Printer;
+  text-align: center;
+  margin-top: 2%;
 }
 
-.main {
-  background-color: #272727;
-  color: #ffcfff;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 1080px;
-}
-  
-.links > ul {
-  list-style-type: none;
-  padding: 0;
-}
-  
-.links {
-  background-color: #373737;
-  width: max-content;
-  padding: 10px;
-}
-  
-.header {
-  top: 20px;
-  color: #ffbd59;
+header, main {
+  padding: 12px;
+  display: block;
   position: relative;
-  text-align: center;
-  font-family:'F25 Bank Printer';
-  font-size: 48px;
+  width: 60%;
+  height: 92%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+h1 {
+  padding-top: 1%;
+}
+
+ul {
+  padding: 10px;
+  list-style: none;
+  margin: auto;
+  width: max-content;
+  max-width: 80%;
+}
+
+li {
+  display: inline-block;
+  background-color: var(--bg1);
+  width: max-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 a {
   text-decoration: none;
-  color: #ffbd59;
-}
-a:visited {
-  text-decoration: none;
-  color:#f7751f;
-}
-
-aside {
-  float: left;
-}
-
-.navigation {
-  list-style-type: none;
-  list-style: none;
+  color: var(--blue);
   padding: 10px;
+  margin: 0px;
+}
+
+bold {
+  color: var(--red);
 }
