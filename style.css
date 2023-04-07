@@ -1,78 +1,156 @@
 :root {
-  --bg: #282828;
-  --bg1: #3c3836;
-  --fg: #ebdbb2;
-  --yellow: #fabd2f;
-  --blue: #83a598;
-  --purple: #d3869d;
-  --red: #fb4934;
+    --bg: #282828;
+    --bg1: #3c3836;
+    --bg2: #504945;
+    --fg: #ebdbb2;
+    --yellow: #fabd2f;
+    --blue: #83a598;
+    --purple: #d3869d;
+    --red: #fb4934;
+    --bga: #fbf1c7;
 
+    --gbg: linear-gradient(var(--yellow), var(--purple));
 }
+
 @font-face {
-  font-family: F25 Bank Printer;
-  src: url(fonts/F25_Bank_Printer.ttf);
+    font-family: F25 Bank Printer;
+    src: url(fonts/F25_Bank_Printer.ttf);
 }
 
 html {
-  height: 100%; 
-  background: linear-gradient(var(--yellow), var(--purple));
-  background-size:contain;
-  background-attachment: fixed;
+    height: 100%; 
+    background: url(media/bg.gif);
+    background-repeat: repeat;
 }
 
 body {
-  
-  background-repeat: no-repeat;
-  background-size: auto;
-  font-family: F25 Bank Printer;
-  text-align: center;
-  margin-top: 2%;
+    
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: F25 Bank Printer;
+    text-align: center;
+    margin-top: 2%;
 }
 
-header, main {
-  padding: 12px;
-  display: block;
-  position: relative;
-  width: 60%;
-  height: 92%;
+article {
+    padding: 12px;
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 92%;
 
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 
-  margin-top: 2%;
-  margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 
-  background-color: var(--bg);
-  color: var(--fg);
+    background-color: var(--bg);
+    color: var(--fg);
+
+    border-radius: 8px;
+    border: solid;
+    border-color: #fabd2f;
+    border-width: 1px;
+}
+
+#lainpic {
+    margin: 0;
+    padding: 0;
+}
+
+#lainpic>img {
+    width: 100%;
+    max-width: 680px;
+    border-radius: 4px;
 }
 
 h1 {
-  padding-top: 1%;
+    padding-top: 1%;
 }
 
 ul {
-  padding: 10px;
-  list-style: none;
-  margin: auto;
-  width: max-content;
-  max-width: 80%;
+    padding: 10px;
+    list-style: none;
+    margin: auto;
+    width: max-content;
+    max-width: 80%;
 }
 
 li {
-  display: inline-block;
-  background-color: var(--bg1);
-  width: max-content;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    list-style: none;
+}
+
+.ll>li {
+    display: inline-block;
+    background-color: var(--bg1);
+    width: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+}
+
+.ll>li:hover {
+    animation: .3s 1 alternate hv;
+    background-color: var(--bg2);
+}
+
+@keyframes hv {
+    from {
+        background-color: var(--bg1);
+    }
+    to {
+        background-color: var(--bg2);
+    }
+}
+
+.ll>li>a {
+    padding: 10px;
+    margin: 0px;
 }
 
 a {
-  text-decoration: none;
-  color: var(--blue);
-  padding: 10px;
-  margin: 0px;
+    text-decoration: none;
+    color: var(--blue);
 }
 
 bold {
-  color: var(--red);
+    color: var(--red);
+}
+
+bold a {
+    color: RED;
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+    position: fixed;
+    left: 10px;
+    bottom: 10px; 
+}
+
+.fl2 {
+    float: left;
+    position: fixed;
+    left: 50px;
+    bottom: 10px; 
+}
+
+.fl>a {
+    padding: 0;
+}
+
+.flc {
+    width: 30px;
+}
+
+.ch {
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bga);
 }

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: F25 Bank Printer;
+    src: url(fonts/F25_Bank_Printer.ttf);
+}
+
+@font-face {
+    font-family: Love LetterTW;
+    src: url(fonts/Love_LetterTW.ttf);
+}
+
+.imgblock {
+    margin: 5px;
+    display: inline-block;
+    width: max-content;
+    text-align: center;
+    padding: 8px;
+    background-color: black;
+}
+
+img, video {
+    /* max-width: 360px; */
+    height: 360px;
+}
+
+.master {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url(media/bg.gif) !important;
+    background-repeat: inherit;
+    margin: 0;
+}
+
+p {
+    font-family: Love LetterTW;
+    display: inline-block;
+    background-color: #000000;
+    color: #ff0000;
+    width: max-content;
+    max-width: 100%;
+    padding: 4px;
+}
+
+nav {
+    position: absolute;
+    /*float: left;*/
+    left: 0px;
+    top: 5px;
+}
+
+.button {
+    font-family: F25 Bank Printer;
+    font-size: small !important;
+    background-color: #fb4934;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
